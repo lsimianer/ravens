@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 body {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+    font-family: 'Krona One', sans-serif;
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
 #navbar {
     margin-top: 2%;
-    background-color: black;
+    background-color: white;
     height: 4vh;
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
@@ -25,7 +27,7 @@ body {
 
 .navLogo {
     height: 0px;
-    border: 1.5px solid #fff;
+    border: 1.5px solid rgb(0, 0, 0);
     width: 22px;
     display: block;
     position: absolute;
@@ -40,13 +42,13 @@ body {
 
 .navLogoButton:hover .navLogo:nth-child(3):before {
     width: 2px;
-    height: 2px;
+    height:2px;
     border-radius: 50%;
     background: #F26451;
 }
 
 .navLogoButton:hover div {
-    border: 2px solid #fff;
+    border: 2px solid rgb(141, 0, 0);
     height: 9px;
     border-radius: 50%;
     margin-left: -1px;
@@ -105,11 +107,11 @@ body {
 .navLogoButton:active .navLogo:nth-child(3):before,
 .navLogoButton:active .navLogo:nth-child(2) {
     opacity: 0;
-    transition: all 200ms;
+    transition: all 1000ms;
 }
 
 .navLogoButton:active div {
-    border: 1.5px solid #fff;
+    border: 1.5px solid rgb(141, 0, 0);
     height: 0px;
     border-radius: 0%;
     margin-left: -1px;
@@ -191,9 +193,13 @@ body {
 }
 
 .header {
-    margin-top: 5%;
-    text-align: center;
+    margin-top: 3%;
+    text-align: right;
+    width: 20%;
 }
+/* #headTextCon{
+    width: 10%;
+} */
 
 #bodyCon {
     margin-top: 5%;
@@ -252,6 +258,12 @@ body {
 
 #footer {
     text-align: center;
+    padding-bottom: 7%;
+    margin-top: 7%;
+    padding-top: 7%;
+    background-color: black;
+    color: white;
+    width: 100vw;
 }
 #cardBg{
     background-color: rgba(2, 65, 18, 0);
@@ -259,3 +271,69 @@ body {
     height: 30vh;
     margin: auto;
 }
+#mbTextCon:hover{
+background-color: rgba(39, 38, 38, 0.719);
+}
+#SSLogo{
+    height: 10vh;
+}
+/* .footerContent{
+    margin-top: 2%;
+    text-align: center;
+} */
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  #sidebarBtn{
+    color:white;    
+margin-left: 35%;
+    font-size: 2rem;
+  }

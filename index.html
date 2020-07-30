@@ -46,7 +46,7 @@
                 RAVENSEYE
             </div>
             <div class="col-sm">
-                <button class="navLogoButton">
+                <button class="navLogoButton" onclick="openNav()">
                     <div class="navLogo"></div>
                     <div class="navLogo"></div>
                     <div class="navLogo"></div>
@@ -55,19 +55,80 @@
         </div>
     </div>
     <!-- end navbar -->
-    <div id="mbjumbo" class="jumbotron jumbotron-fluid">
-        <h1 class="header"> our mission is simple,<br>
-            to reduce the net amount of suffering in the world. </h1>
+    <!-- sidebar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#footer">Contact</a>
+        <i id='sidebarBtn' class="fas fa-times" onclick="closeNav()"></i>
     </div>
-    <div id="mbTextCon" class="container">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique laboriosam odit, deserunt, animi omnis sit
-        eligendi optio incidunt saepe rerum delectus labore. Ad debitis aliquam explicabo non voluptatum, sapiente fuga?
-    </div>
+    <!-- end sidebar -->
+    <div id="main">
+        <div id="mbjumbo" class="jumbotron jumbotron-fluid">
+            <div class="headTextCon">
+                <p class="header"> our mission is simple,<br>
+                    to reduce the net amount of suffering in the world.
+                </p>
+            </div>
+        </div>
+        <div id="mbTextCon" class="container">
+            RAVENSEYE was created with one mission in mind, to reduce the net amount of suffering in the world. Quickly
+            growing from an Austin based startup
+            into a movement that inspired many and became an ally for the sight disabled.
+            <br><br>
+            RAVENSEYE enables school systems, corporations, and small businesses to become an ally of the sight disabled
+            as
+            well.
+            We do this through affordable upgrades to your existing platform or building one from scratch.
+            <br><br>
+            RAVENSEYE is crucial to not only preventing litigation but to taking pride in the fact that your entity is
+            doing
+            the
+            right thing by not just settling for compliance but creating a true user experince for your sight disabled
+            consumers.
+            <br><br>
+            RAVENSEYE employs sight disabled test engineers to perfect the end product before it is submitted for review
+            back to you.
+            This decreases revisions and increases time efficiency on your end.
+        </div>
 
-    <div id="bodyCon" class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div id="cardBg">
+        <div id="bodyCon" class="container">
+            <div class="row">
+                <div class="col-md">
+                    <div id="cardBg">
+                        <div id="f1_container">
+                            <div id="f1_card" class="shadow">
+                                <div class="front face">
+                                    <img class="face" src="./images/ravenspicluke.JPG" />
+                                </div>
+                                <div class="back face center">
+                                    <p>This is nice for exposing more information about an image.</p>
+                                    <p>Any content can go here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div id="f1_container">
+                        <div id="f1_card" class="shadow">
+                            <div class="front face">
+                                <img class="face" src="./images/ravenspicluke.JPG" />
+                            </div>
+                            <div class="back face center">
+                                <p>This is nice for exposing more information about an image.</p>
+                                <p>Any content can go here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
                     <div id="f1_container">
                         <div id="f1_card" class="shadow">
                             <div class="front face">
@@ -82,63 +143,39 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm">
-                <div id="f1_container">
-                    <div id="f1_card" class="shadow">
-                        <div class="front face">
-                            <img class="face" src="./images/ravenspicluke.JPG" />
-                        </div>
-                        <div class="back face center">
-                            <p>This is nice for exposing more information about an image.</p>
-                            <p>Any content can go here.</p>
-                        </div>
-                    </div>
+        <!-- end cards -->
+
+        <div id="footer" class="container-fluid position-absolute">
+            <div class="row">
+                <div class="col-sm">
+                    Contact us for a quote Today
                 </div>
+                <br><br>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <div id="f1_container">
-                    <div id="f1_card" class="shadow">
-                        <div class="front face">
-                            <img class="face" src="./images/ravenspicluke.JPG" />
-                        </div>
-                        <div class="back face center">
-                            <p>This is nice for exposing more information about an image.</p>
-                            <p>Any content can go here.</p>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-sm">
+                    <i class="far fa-envelope"></i>
+                    luke@simianeradasolutions.com
                 </div>
+                <br><br>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <i class="fas fa-phone-alt"></i>
+                    402-350-2259
+                </div>
+                <br><br>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <a href="https://simianersolutions.com/" target='_blank'>
+                        <img id="SSLogo" src="./images/WhiteLogo.png">
+                    </a>
+                </div>
+                <br><br>
             </div>
         </div>
     </div>
-    <!-- end cards -->
-
-    <div id="footer" class="container">
-        <div class="row">
-            <div class="col-sm">
-                Contact us for a qoute Today
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <i class="far fa-envelope"></i>
-                luke@simianeradasolutions.com
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <i class="fas fa-phone-alt"></i>
-                402-350-2259
-            </div>
-        </div>
-    </div>
-
-    </div>
-
-    </div>
-
     <script src="app.js"></script>
 </body>
 
