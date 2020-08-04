@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
 body {
     background-color: white;
     color: black;
@@ -6,197 +7,13 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
-#navbar {
-    margin-top: 2%;
-    background-color: white;
-    height: 4vh;
-    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-}
-
-.navLogoButton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 30px;
-    height: 30px;
-    transition: all 300ms cubic-bezier(.61, .01, .42, 1);
-    cursor: pointer;
-    background: transparent;
-    border: 0px;
-}
-
-.navLogo {
-    height: 0px;
-    border: 1.5px solid rgb(0, 0, 0);
-    width: 22px;
-    display: block;
-    position: absolute;
-    transition: all 300ms cubic-bezier(.61, .01, .42, 1);
-    background: #fff;
-}
-
-.navLogoButton:hover {
-    transition-delay: 100ms;
-    transform: scale(1.1);
-}
-
-.navLogoButton:hover .navLogo:nth-child(3):before {
-    width: 2px;
-    height:2px;
-    border-radius: 50%;
-    background: #F26451;
-}
-
-.navLogoButton:hover div {
-    border: 2px solid rgb(141, 0, 0);
-    height: 9px;
-    border-radius: 50%;
-    margin-left: -1px;
-    margin-top: 2px;
-    animation: atom 300ms linear 1;
-    width: 25px;
-    top: 0px;
-    background: transparent;
-}
-
-.navLogoButton:focus {
-    outline: 0px;
-}
-
-.navLogo:nth-child(1) {
-    top: 0px;
-}
-
-.navLogo:nth-child(2) {
-    top: 8px;
-}
-
-.navLogo:nth-child(3) {
-    top: 16px;
-}
-
-.navLogo:nth-child(3):before {
-    opacity: 0;
-    animation: ball 1.5s linear infinite;
-    content: '';
-    border: 2px solid #fff;
-    display: block;
-    position: relative;
-    top: 0.25px;
-}
-
-.navLogoButton:hover .navLogo:nth-child(1) {
-    transform: rotate(-33deg);
-}
-
-.navLogoButton:hover .navLogo:nth-child(2) {
-    transform: rotate(90deg);
-}
-
-.navLogoButton:hover .navLogo:nth-child(3) {
-    transform: rotate(33deg);
-}
-
-.navLogoButton:hover .navLogo:nth-child(3):before {
-    opacity: 1;
-    transition: opacity 600ms cubic-bezier(.61, .01, .42, 1);
-    ;
-}
-
-.navLogoButton:active:hover .navLogo:nth-child(3):before,
-.navLogoButton:active .navLogo:nth-child(3):before,
-.navLogoButton:active .navLogo:nth-child(2) {
-    opacity: 0;
-    transition: all 1000ms;
-}
-
-.navLogoButton:active div {
-    border: 1.5px solid rgb(141, 0, 0);
-    height: 0px;
-    border-radius: 0%;
-    margin-left: -1px;
-    margin-top: 6px;
-    animation: division 300ms linear 1;
-    width: 25px;
-    top: 0px;
-}
-
-.navLogoButton:active .navLogo:nth-child(2) {
-    width: 0px;
-}
-
-.navLogoButton:active .navLogo:nth-child(3) {
-    transform: rotate(45deg);
-}
-
-.navLogoButton:active .navLogo:nth-child(1) {
-    transform: rotate(-45deg);
-}
-
-@keyframes atom {
-    0% {
-        transform: rotate(180deg);
-    }
-}
-
-@keyframes division {
-    0% {
-        transform: rotate(180deg);
-    }
-}
-
-@keyframes ball {
-    0% {
-        left: -20%;
-        top: 10%;
-    }
-
-    10% {
-        left: 10%;
-        top: -35%;
-    }
-
-    25% {
-        left: 45%;
-        top: -50%;
-    }
-
-    40% {
-        left: 80%;
-        top: -20%;
-    }
-
-    50% {
-        left: 98%;
-        top: 18%;
-    }
-
-    60% {
-        left: 80%;
-        top: 50%;
-    }
-
-    75% {
-        left: 45%;
-        top: 80%;
-    }
-
-    90% {
-        left: 0%;
-        top: 60%;
-    }
-
-    100% {
-        left: -20%;
-        top: 10%;
-    }
-}
 
 .header {
-    margin-top: 3%;
-    text-align: right;
-    width: 20%;
+    text-align: center;
+    color: white;
+    text-shadow: #FC0 1px 0 10px;
 }
+
 /* #headTextCon{
     width: 10%;
 } */
@@ -207,10 +24,12 @@ body {
 
 #mbjumbo {
     margin-top: 5%;
-    background-image: url('./images/ravenspicluke.JPG');
+    background: linear-gradient(0deg, rgba(4, 196, 52, 0.3), rgba(1, 105, 19, 0.664)), url('./images/ravenspicluke.JPG');
+    /* background-image: url('./images/ravenspicluke.JPG'); */
     background-position-y: 85%;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 25vh;
 }
 
 
@@ -265,75 +84,152 @@ body {
     color: white;
     width: 100vw;
 }
-#cardBg{
+
+#cardBg {
     background-color: rgba(2, 65, 18, 0);
     width: 50vw;
     height: 30vh;
     margin: auto;
 }
-#mbTextCon:hover{
-background-color: rgba(39, 38, 38, 0.719);
+
+#mbTextCon:hover {
+    background-color: rgba(39, 38, 38, 0.719);
 }
-#SSLogo{
+
+#SSLogo {
     height: 10vh;
 }
-/* .footerContent{
-    margin-top: 2%;
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+
+}
+
+.nav-link {
+    width: 100%;
+    display: inline-block;
+}
+
+.mbTextCon {
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    /* background-color: green; */
+    background: linear-gradient(0deg, rgba(1, 116, 30, 0.589), rgba(1, 105, 18, 0.712)), url('./images/BlackLogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    padding: 7%;
+    height: 30vh;
+    width: 35vw;
+    word-wrap: break-word;
+    transition: all 1.5s ease,
+        padding 0.8s linear;
+    -webkit-transition: background-color all 1.5s ease,
+        padding 0.8s linear;
+    -moz-transition: background-color all 1.5s ease,
+        padding 0.8s linear;
+    -o-transition: background-color all 1.5s ease,
+        padding 0.8s linear;
+    /* font-size: .5rem; */
+}
+
+.mbTextCon:hover {
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgba(1, 105, 18, 0.925)), url('./images/BlackLogo.png');
+    /* background-color: white; */
+}
+
+.headerLink {
+    color: black;
     text-align: center;
-} */
+}
 
+.inTextLink {
+    color: grey;
+}
 
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-  #sidebarBtn{
-    color:white;    
-margin-left: 35%;
-    font-size: 2rem;
-  }
+.inTextLink:hover {
+    text-shadow: #FC0 1px 0 10px;
+    color: green;
+}
+
+.headerLink:hover {
+    text-shadow: #FC0 1px 0 10px;
+    color: green;
+}
+
+#getCompliant {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(247, 250, 255, 0.26);
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+
+#visualTextGrid {
+    margin-top: 5%;
+    background-color: rgba(247, 250, 255, 0.26);
+}
+
+.faqHeader {
+    text-align: center;
+}
+
+#products {
+    margin-top: 5%;
+    text-align: center;
+
+}
+
+#productIconContainer {
+    /* margin-top: 10%; */
+}
+
+.productsHeader {
+    text-align: center;
+    margin-bottom: 10%;
+
+}
+
+.iconHolder {
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgb(74, 226, 112), rgba(1, 105, 18, 0.925)), url('./images/BlackLogo.png');
+    height: 5rem;
+    width: 5rem;
+    display: inline-block;
+    margin-bottom: 2.5%;
+    cursor: pointer;
+    border: 1px solid #012880;
+    background-image: linear-gradient(-180deg, rgb(2, 126, 29) 0%, rgb(228, 206, 15) 100%);
+    box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5),
+        0 -0.25rem 1.5rem rgba(2, 138, 54, 0.966) inset,
+        0 0.75rem 0.5rem rgba(158, 158, 158, 0.4) inset,
+        0 0.25rem 0.5rem 0 rgb(0, 0, 0) inset;
+        font-size: 2rem;
+}
+
+.iconHolder:hover {
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgba(1, 105, 18, 0.925)), url('./images/BlackLogo.png');
+}
+
+#productIcon {
+    padding-top: 0%;
+}
+#auditModalLabel{
+    text-align: center;
+    margin: auto;
+}
+.modal-body{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.815), rgba(255, 255, 255, 0.815)), url('./images/BlackLogo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

@@ -37,143 +37,231 @@
 </head>
 
 <body>
-    <div id="navbar" class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li id='navItem' class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i id='navIcon' class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li id='navItem' class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i id='navIcon' class="fas fa-code"></i>
+                        Products
+                    </a>
+                </li>
+                <li id='navItem' class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i id='navIcon' class="fas fa-user-tie"></i>
+                        The process
+                    </a>
+                </li>
+                <li id='navItem' class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i id='navIcon' class="fas fa-calculator"></i>
+                        Cost Calculator
+                    </a>
+                </li>
+                <li id='navItem' class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i id='navIcon' class="fas fa-users "></i>
+                        Who we are
+                    </a>
+                </li>
+                <li id='navItem' class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i id='navIcon' class="fas fa-envelope"></i>
+                        Contact us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- end navbar -->
+
+    <div id="mbjumbo" class="jumbotron jumbotron-fluid">
+        <div class="headTextCon">
+            <p class="header"> our mission is simple,<br>
+                to reduce the net amount of suffering in the world.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="getCompliant">
+        <h3 class="compliantHeader">
+            <a class="headerLink" href="#">Become ADA Compliant Today</a>
+        </h3>
+        <p class="complianceHeaderP text-muted">
+            Revolutionize the way you serve your visually impaired customers while keeping your assets safe from
+            <a class='inTextLink' href='#'>
+                litigation.
+            </a>
+        </p>
+        <br>
+
+        <p class="complianceText">
+            Ensuring your digital footprint is compatible with WCAG, 508, and ADA compliant
+            is the bare minimum an entity can do to prevent litigation. This still leaves a lot
+            to be desired for consumers with disabilities and leads to a loss of the user experience
+            you invested in and created.
+            <br><br>
+            RavensEye is the next level in visually impaired UI/UX. Our services enable you to
+            truly be an ally to the visually impaired community. This not only earns you bragging rights
+            and the ability to take pride in your product, but it greatly increases conversions and the lifetime value
+            of your
+            visually impaired customers.
+        </p>
+    </div>
+    <div class="container" id="products">
+        <h3 class="productsHeader">
+            Our Products & Services
+        </h3>
+        <div class="productIconContainer">
+            <div class="row">
+                <div class="col">
+                    <button class="iconHolder" data-toggle="modal" data-target="#auditModal">
+                        <i id="productIcon" class="fas fa-percentage"></i>
+                    </button>
+                    <!-- audit modal -->
+                    <div class="modal fade" id="auditModal" tabindex="-1" aria-labelledby="auditModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="auditModalLabel">Assesment & Auditing</h5>                                    
+                                </div>
+                                <div class="modal-body">
+                                    <p class="modalBodyText">
+                                        The first step toward getting compliant is getting a third party audit completed.
+                                        RavensEye Is unique in the fact that all of our quality engineers are visually impaired. This 
+                                        allows RavensEye to give the fastest and most accurate audit in the industry.
+                                        <br><br>
+                                        Assesments and Auditing are typically the first part of our process so we can create a plan of action
+                                        and an accurate quote prior to remdiation. They can also be done as stand alone services to point your engineering team in
+                                        the right direction and address immmediate issues that leave you exposed.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Exit</button>
+                                    <button type="button" class="btn btn-primary">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end audit modal -->
+                </div>
+                <div class="col">
+                    <button class="iconHolder" data-toggle="modal" data-target="#remediationModal">
+                        <i id="productIcon" class="fas fa-code"></i>
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="iconHolder" data-toggle="modal" data-target="#ConsultingModal">
+                        <i id="productIcon" class="far fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    Assesment & Auditing
+                </div>
+                <div class="col">
+                    Compliance Remediation
+                </div>
+                <div class="col">
+                    Long Term & project Consulting
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container" id='visualTextGrid'>
+        <h3 class="faqHeader">
+            Facts about RavensEye
+        </h3>
+        <div class="row">
+            <div class="col">
+                <div id="headCon1" class="container mbTextCon">
+                    RavensEye was created with one mission in mind, to reduce the net amount of suffering in the world.
+                    Quickly
+                    growing from an Austin based startup
+                    into a movement that inspired many and became an ally for the sight disabled.
+                </div>
+            </div>
+            <div class="col">
+                <div id="headCon2" class="container mbTextCon">
+                    RavensEye enables school systems, corporations, and small businesses to become an ally of the sight
+                    disabled
+                    as
+                    well.
+                    We do this through affordable upgrades to your existing platform or building one from scratch.
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-md-4 col-sm-12"></div>
+        </div> -->
+        <div class="row">
+            <div class='col'>
+                <div id="headCon3" class="container mbTextCon">
+                    RavensEye is crucial to not only preventing litigation but to taking pride in the fact that your
+                    entity is doing the right thing by not just settling for compliance but creating a true user
+                    experince for your sight
+                    disabled consumers.
+                </div>
+            </div>
+            <div class='col'>
+                <div id="headCon4" class="container mbTextCon">
+                    RavensEye employs sight disabled test engineers to perfect the end product before it is submitted
+                    for review back to you.
+                    This decreases revisions and increases time efficiency on your end.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end cards -->
+
+    <div id="footer" class="container-fluid position-absolute">
         <div class="row">
             <div class="col-sm">
-                logo
+                Contact us for a quote Today
             </div>
+            <br><br>
+        </div>
+        <div class="row">
             <div class="col-sm">
-                RAVENSEYE
+                <i class="far fa-envelope"></i>
+                luke@simianeradasolutions.com
             </div>
+            <br><br>
+        </div>
+        <div class="row">
             <div class="col-sm">
-                <button class="navLogoButton" onclick="openNav()">
-                    <div class="navLogo"></div>
-                    <div class="navLogo"></div>
-                    <div class="navLogo"></div>
-                </button>
+                <i class="fas fa-phone-alt"></i>
+                402-350-2259
             </div>
-        </div>
-    </div>
-    <!-- end navbar -->
-    <!-- sidebar -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#footer">Contact</a>
-        <i id='sidebarBtn' class="fas fa-times" onclick="closeNav()"></i>
-    </div>
-    <!-- end sidebar -->
-    <div id="main">
-        <div id="mbjumbo" class="jumbotron jumbotron-fluid">
-            <div class="headTextCon">
-                <p class="header"> our mission is simple,<br>
-                    to reduce the net amount of suffering in the world.
-                </p>
-            </div>
-        </div>
-        <div id="mbTextCon" class="container">
-            RAVENSEYE was created with one mission in mind, to reduce the net amount of suffering in the world. Quickly
-            growing from an Austin based startup
-            into a movement that inspired many and became an ally for the sight disabled.
             <br><br>
-            RAVENSEYE enables school systems, corporations, and small businesses to become an ally of the sight disabled
-            as
-            well.
-            We do this through affordable upgrades to your existing platform or building one from scratch.
-            <br><br>
-            RAVENSEYE is crucial to not only preventing litigation but to taking pride in the fact that your entity is
-            doing
-            the
-            right thing by not just settling for compliance but creating a true user experince for your sight disabled
-            consumers.
-            <br><br>
-            RAVENSEYE employs sight disabled test engineers to perfect the end product before it is submitted for review
-            back to you.
-            This decreases revisions and increases time efficiency on your end.
         </div>
-
-        <div id="bodyCon" class="container">
-            <div class="row">
-                <div class="col-md">
-                    <div id="cardBg">
-                        <div id="f1_container">
-                            <div id="f1_card" class="shadow">
-                                <div class="front face">
-                                    <img class="face" src="./images/ravenspicluke.JPG" />
-                                </div>
-                                <div class="back face center">
-                                    <p>This is nice for exposing more information about an image.</p>
-                                    <p>Any content can go here.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-sm">
+                <a href="https://simianersolutions.com/" target='_blank'>
+                    <img id="SSLogo" src="./images/WhiteLogo.png">
+                </a>
             </div>
-            <div class="row">
-                <div class="col-md">
-                    <div id="f1_container">
-                        <div id="f1_card" class="shadow">
-                            <div class="front face">
-                                <img class="face" src="./images/ravenspicluke.JPG" />
-                            </div>
-                            <div class="back face center">
-                                <p>This is nice for exposing more information about an image.</p>
-                                <p>Any content can go here.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md">
-                    <div id="f1_container">
-                        <div id="f1_card" class="shadow">
-                            <div class="front face">
-                                <img class="face" src="./images/ravenspicluke.JPG" />
-                            </div>
-                            <div class="back face center">
-                                <p>This is nice for exposing more information about an image.</p>
-                                <p>Any content can go here.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end cards -->
-
-        <div id="footer" class="container-fluid position-absolute">
-            <div class="row">
-                <div class="col-sm">
-                    Contact us for a quote Today
-                </div>
-                <br><br>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <i class="far fa-envelope"></i>
-                    luke@simianeradasolutions.com
-                </div>
-                <br><br>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <i class="fas fa-phone-alt"></i>
-                    402-350-2259
-                </div>
-                <br><br>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <a href="https://simianersolutions.com/" target='_blank'>
-                        <img id="SSLogo" src="./images/WhiteLogo.png">
-                    </a>
-                </div>
-                <br><br>
-            </div>
+            <br><br>
         </div>
     </div>
     <script src="app.js"></script>
