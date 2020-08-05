@@ -92,9 +92,6 @@ body {
     margin: auto;
 }
 
-#mbTextCon:hover {
-    background-color: rgba(39, 38, 38, 0.719);
-}
 
 #SSLogo {
     height: 10vh;
@@ -117,6 +114,7 @@ body {
 }
 
 .mbTextCon {
+    color: transparent;
     margin: auto;
     margin-top: 7%;
     margin-bottom: 10%;
@@ -142,8 +140,9 @@ body {
 }
 
 .mbTextCon:hover {
-    background: linear-gradient(0deg, rgb(255, 255, 255), rgba(1, 105, 18, 0.925)), url('./images/BlackLogo.png');
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgb(1, 105, 18)), url('./images/BlackLogo.png');
     /* background-color: white; */
+    color: black;
 }
 
 .headerLink {
@@ -152,7 +151,10 @@ body {
 }
 
 .inTextLink {
-    color: grey;
+    color: green;
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
 }
 
 .inTextLink:hover {
@@ -213,7 +215,7 @@ body {
         0 -0.25rem 1.5rem rgba(2, 138, 54, 0.966) inset,
         0 0.75rem 0.5rem rgba(158, 158, 158, 0.4) inset,
         0 0.25rem 0.5rem 0 rgb(0, 0, 0) inset;
-        font-size: 2rem;
+    font-size: 2rem;
 }
 
 .iconHolder:hover {
@@ -223,13 +225,47 @@ body {
 #productIcon {
     padding-top: 0%;
 }
-#auditModalLabel{
+
+#auditModalLabel {
     text-align: center;
     margin: auto;
 }
-.modal-body{
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.815), rgba(255, 255, 255, 0.815)), url('./images/BlackLogo.png');
+
+.modal-body {
+    /* background-color: green; */
+    /* background: linear-gradient(0deg, rgba(255, 255, 255, 0.815), rgba(255, 255, 255, 0.815)), url('./images/BlackLogo.png'); */
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.exitBtn {
+    background-color: black;
+    color: white;
+}
+
+.learnBtn {
+    background-color: green;
+    color: white;
+}
+
+#RemediationModalLabel {
+    text-align: center;
+    margin: auto;
+}
+
+#ConsultingModalLabel {
+    text-align: center;
+    margin: auto;
+}
+/* products page  */
+#ppCon1{
+    margin-top: 5%;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+
+}
+#cardHolder{
+    margin-left: 5%;
 }
