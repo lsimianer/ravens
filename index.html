@@ -103,8 +103,8 @@
         </h3>
         <p class="complianceHeaderP text-muted">
             Revolutionize the way you serve your visually impaired customers while keeping your assets safe from
-            <button class='inTextLink' data-toggle="modal" data-target="#articleModal">
-                litigation.
+            <button class='inTextLink'>
+                <a class='noStyleLink' href='/pages/edu.html'>litigation.</a>
             </button>
         </p>
         <br>
@@ -121,55 +121,63 @@
             visually impaired customers.
         </p>
         <div id="btnDiv">
-            <button id="getQuoteButton">Education & Resources</button>
-            <button id="getQuoteButton">Request a Quote</button>
+            <button id="getQuoteButton"> <a class='btnlink' href='/pages/edu.html'>Education & Resources</a></button>
+            <button id="getQuoteButton"><a class='btnlink' href='/pages/edu.html'>Request a Quote</a></button>
         </div>
     </div>
     <!-- article modal -->
-    <div class="modal fade" id="articleModal" tabindex="-1" aria-labelledby="articleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="articleModalLabel">Litigation & Recent News</h5>
+    <!-- <div class="modal fade" id="articleModal" tabindex="-1" aria-labelledby="articleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div id="cutomModalDialog" class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="articleModalLabel">Litigation & Recent News</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <img url
+                        </div>
+                        <div class="col">
+                            <p class="modalBodyText">
+                                Web accesibilty and case law has a storied history but the most relevent precedent for
+                                our clients was established in 2019.
+                                <br>
+                                In late 2019 the supreme court refused to hear a petition from Domino's Pizza to dispute
+                                a lower court ruling that
+                                the pizza chains website is required to be accesible to the disabled. This left the
+                                lower
+                                court's decision as precedent.
+                                <br><br>
+                                What does this mean for you?
+                                <br>
+                                This ruling means that an entity conducting business online must make their websites
+                                acccesible to the disabled. Specifically in
+                                comliance with WCAG, 508, and the ADA. This is a giant win for accesibility advocates
+                                but also a potential pitfall to the
+                                unaware businesses.
+                                <br>
+                                Some resistance to the ruling has been voiced but it doesnt stand to the simple analogy
+                                of a building being required
+                                to have a wheelchair accesible ramp. Being and ally to the visually impaired community
+                                means going above and beyond to ensure your digital footprint is not only accesible
+                                but not providing a second rate experience for disabled consumers.
+                                <br><br>
+                                Read more <a href="https://www.cnbc.com/2019/10/07/dominos-supreme-court.html#:~:text=Supreme%20Court%20hands%20victory%20to%20blind%20man%20who%20sued%20Domino's%20over%20site%20accessibility,-Published%20Mon%2C%20Oct&text=The%20case%20was%20originally%20brought,despite%20using%20screen%2Dreading%20software.">
+                                    here.
+                                </a>
+                            </p>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <p class="modalBodyText">
-                            Web accesibilty and case law has a storied history but the most relevent precedent for our
-                            clients was established in 2019.
-                            <br>
-                            In late 2019 the supreme court refused to hear a petition from Domino's Pizza to dispute a
-                            lower court ruling that
-                            the pizza chains website is required to be accesible to the disabled. This left the lower
-                            court's decision as precedent.
-                            <br><br>
-                            What does this mean for you?
-                            <br>
-                            This ruling means that an entity conducting business online must make their websites
-                            acccesible to the disabled. Specifically in
-                            comliance with WCAG, 508, and the ADA. This is a giant win for accesibility advocates but
-                            also a potential pitfall to the
-                            unaware businesses.
-                            <br>
-                            Some resistance to the ruling has been voiced but it doesnt stand to the simple analogy of a
-                            building being required
-                            to have a wheelchair accesible ramp. Being and ally to the visually impaired community means
-                            going above and beyond to ensure your digital footprint is not only accesible
-                            but not providing a second rate experience for disabled consumers.
-                            <br><br>
-                            Read more <a
-                                href="https://www.cnbc.com/2019/10/07/dominos-supreme-court.html#:~:text=Supreme%20Court%20hands%20victory%20to%20blind%20man%20who%20sued%20Domino's%20over%20site%20accessibility,-Published%20Mon%2C%20Oct&text=The%20case%20was%20originally%20brought,despite%20using%20screen%2Dreading%20software.">
-                                here.
-                            </a>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn exitBtn" data-dismiss="modal">Exit</button>
-                        <button type="button" class="btn learnBtn">Become ADA Compliant</button>
-                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn exitBtn" data-dismiss="modal">Exit</button>
+                    <button type="button" class="btn learnBtn">Become ADA Compliant</button>
                 </div>
             </div>
-        </div>
-        <!-- end article modal -->
+        </div> -->
+    <!-- </div> -->
+    <!-- end article modal -->
     <div class="container" id="products">
         <h3 class="productsHeader">
             Our Products & Services
@@ -177,105 +185,19 @@
         <div class="productIconContainer">
             <div class="row">
                 <div class="col">
-                    <button class="iconHolder" data-toggle="modal" data-target="#auditModal">
+                    <button class="iconHolder" onclick="openAudit()">
                         <i id="productIcon" class="fas fa-percentage"></i>
                     </button>
-                    <!-- audit modal -->
-                    <div class="modal fade" id="auditModal" tabindex="-1" aria-labelledby="auditModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="auditModalLabel">Assesment & Auditing</h5>
-                                </div>
-                                <div class="modal-body">
-                                    <p class="modalBodyText">
-                                        The first step toward getting compliant is getting a third party audit
-                                        completed.
-                                        RavensEye Is unique in the fact that all of our quality engineers are visually
-                                        impaired. This
-                                        allows RavensEye to give the fastest and most accurate audit in the industry.
-                                        <br><br>
-                                        Assesments and Auditing are typically the first part of our process so we can
-                                        create a plan of action
-                                        and an accurate quote prior to remdiation. They can also be done as stand alone
-                                        services to point your engineering team in
-                                        the right direction and address immmediate issues that leave you exposed.
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn exitBtn" data-dismiss="modal">Exit</button>
-                                    <button type="button" class="btn learnBtn">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end audit modal -->
                 </div>
                 <div class="col">
-                    <button class="iconHolder" data-toggle="modal" data-target="#RemediationModal">
+                    <button class="iconHolder" onclick="openRemediation()">
                         <i id="productIcon" class="fas fa-code"></i>
                     </button>
-                    <!-- Remediation modal -->
-                    <div class="modal fade" id="RemediationModal" tabindex="-1" aria-labelledby="RemediationModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="RemediationModalLabel">Remediation</h5>
-                                </div>
-                                <div class="modal-body">
-                                    <p class="modalBodyText">
-                                        Remediation is the second step in the pursuit of compliance. Remediation is also
-                                        the biggest variable in every project.
-                                        Depending on the complexity of the project and the amount of issues found during
-                                        the initial audit.
-                                        Our remediation takes an emergency first approach to get your digital footprint
-                                        compliant and reduce your
-                                        risk immediately. Fine tuning with our quality engineering team follows.
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn exitBtn" data-dismiss="modal">Exit</button>
-                                    <button type="button" class="btn learnBtn">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end Remediation modal -->
                 </div>
                 <div class="col">
-                    <button class="iconHolder" data-toggle="modal" data-target="#ConsultingModal">
+                    <button class="iconHolder" onclick="openConsulting()">
                         <i id="productIcon" class="far fa-eye"></i>
                     </button>
-                    <!-- consulting modal -->
-                    <div class="modal fade" id="ConsultingModal" tabindex="-1" aria-labelledby="ConsultingModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="ConsultingModalLabel">Long Term & Project Consulting
-                                    </h5>
-                                </div>
-                                <div class="modal-body">
-                                    <p class="modalBodyText">
-                                        Long term Consulting is most often used by entities with a rapidly changing
-                                        digital footprint. Whether you're in eccommmerce with a steady change in
-                                        inventory or
-                                        a media source with new articles daily we have the power to ensure all your
-                                        content is
-                                        not only compliant but provides a full user experience for your visually
-                                        impaired customers.
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn exitBtn" data-dismiss="modal">Exit</button>
-                                    <button type="button" class="btn learnBtn">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end consulting modal -->
                 </div>
             </div>
             <div class="row">
@@ -289,7 +211,54 @@
                     Long Term & Project Consulting
                 </div>
             </div>
+            <div class="row">
+                <div class="col">
+                    <div class="container hidden" id="changeableDiv">
 
+                    </div>
+                    <!-- <div id='hiddenAudit' class=" productDivvy hidden">
+                        <p class="modalBodyText">
+                            The first step toward getting compliant is getting a third party audit
+                            completed.
+                            RavensEye Is unique in the fact that all of our quality engineers are visually
+                            impaired. This
+                            allows RavensEye to give the fastest and most accurate audit in the industry.
+                            <br><br>
+                            Assesments and Auditing are typically the first part of our process so we can
+                            create a plan of action
+                            and an accurate quote prior to remdiation. They can also be done as stand alone
+                            services to point your engineering team in
+                            the right direction and address immmediate issues that leave you exposed.
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id='hiddenRemediation' class=" productDivvy hidden">
+                        <p class="modalBodyText">
+                            Remediation is the second step in the pursuit of compliance. Remediation is also
+                            the biggest variable in every project.
+                            Depending on the complexity of the project and the amount of issues found during
+                            the initial audit.
+                            Our remediation takes an emergency first approach to get your digital footprint
+                            compliant and reduce your
+                            risk immediately. Fine tuning with our quality engineering team follows.
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id='hiddenConsulting' class=" productDivvy hidden">
+                        <p class="modalBodyText">
+                            Long term Consulting is most often used by entities with a rapidly changing
+                            digital footprint. Whether you're in eccommmerce with a steady change in
+                            inventory or
+                            a media source with new articles daily we have the power to ensure all your
+                            content is
+                            not only compliant but provides a full user experience for your visually
+                            impaired customers.
+                        </p>
+                    </div> -->
+                </div>
+            </div>
         </div>
     </div>
 

@@ -74,3 +74,14 @@ const calculate = () => {
     let maintenanceTotal = document.getElementById('maintenanceTotal').innerText = `$ ${maintenanceCalc.toLocaleString()}`
     let yearlyTotal = document.getElementById('yearlyTotal').innerText = `$ ${total.toLocaleString()}`
 }
+
+const openAudit = () => {
+    document.getElementById('changeableDiv').classList.toggle('showMeDown')
+    document.getElementById('changeableDiv').classList.toggle('hidden')
+}
+const openRemediation = () => {
+    document.getElementById('hiddenRemediation').classList.toggle('hidden')
+}
+const openConsulting = () => {
+    document.getElementById('hiddenConsulting').classList.toggle('hidden')
+}

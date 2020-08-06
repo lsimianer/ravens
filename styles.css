@@ -451,6 +451,28 @@ body {
     margin-left: 5%;
 }
 
+.hidden {
+    display: none;
+}
+
+#changeableDiv {
+    margin-top: 3%;
+    border: #030303 solid 1px;
+    width: 90vh;
+    padding: 5%;
+    border-radius: 25px;
+
+}
+
+.showMeDown {
+    transition: all .5s ease-in-out;
+    height: 0;
+}
+
+.showMeDown:target {
+    height: 50px;
+}
+
 /* calculator page begin */
 
 #calculatorBody {
@@ -486,5 +508,17 @@ body {
     margin-bottom: 3%;
 }
 
+.noStyleLink {
+    color: green;
+}
+
+.btnlink {
+    color: white;
+}
+
+.btnlink:hover {
+    color: black;
+    text-shadow: #FC0 1px 0 10px;
+}
 
 /* calculator page end */
