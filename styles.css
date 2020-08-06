@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
 body {
     background-color: white;
     color: black;
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
     overflow-x: hidden;
 }
@@ -468,15 +469,18 @@ body {
     padding-bottom: 3%;
 }
 
-.calcHeader, .calcHeadText {
+.calcHeader,
+.calcHeadText {
     text-align: center;
 }
-.calcHeadDis{
+
+.calcHeadDis {
     color: grey;
     font-size: 10px;
     text-align: center;
 }
-#resultsDiv{
+
+#resultsDiv {
     margin-top: 3%;
     border: black solid 1px;
     margin-bottom: 3%;
