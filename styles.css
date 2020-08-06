@@ -5,7 +5,49 @@ body {
     color: black;
     font-family: 'Krona One', sans-serif;
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    overflow-x: hidden;
 }
+
+#theNav {
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    background-color: rgba(255, 255, 255, 0.712) !important;
+    color: black !important;
+}
+
+#navBurger {
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #030303;
+}
+
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.rotate.down {
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 
 
 .header {
@@ -169,11 +211,49 @@ body {
 
 #getCompliant {
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     background-color: rgba(247, 250, 255, 0.26);
     padding-left: 15%;
     padding-right: 15%;
 
+    -webkit-animation: flyInLeft 5s forwards;
+    /* Safari 4+ */
+    -moz-animation: flyInLeft 5s forwards;
+    /* Fx 5+ */
+    -o-animation: flyInLeft 5s forwards;
+    /* Opera 12+ */
+    animation: flyInLeft 5s forwards;
+    /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes flyInLeft {
+    0% {
+        transform: translateX(-900px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-moz-keyframes flyInLeft {
+    0% {
+        transform: translateX(-900px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes flyInLeft {
+    0% {
+        transform: translateX(-900px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 #visualTextGrid {
@@ -189,10 +269,72 @@ body {
     margin-top: 5%;
     text-align: center;
 
+    /* -webkit-animation: flyInRight 5s forwards;
+    -moz-animation: flyInRight 5s forwards;
+    -o-animation: flyInRight 5s forwards;
+    animation: flyInRight 5s forwards; */
+
 }
 
-#productIconContainer {
-    /* margin-top: 10%; */
+.modalBodyText {
+    text-align: left;
+}
+
+@-webkit-keyframes flyInRight {
+    0% {
+        transform: translateX(900px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-moz-keyframes flyInRight {
+    0% {
+        transform: translateX(900px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes flyInRight {
+    0% {
+        transform: translateX(900px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.factLeft {
+    -webkit-animation: flyInLeft 5s forwards;
+    /* Safari 4+ */
+    -moz-animation: flyInLeft 5s forwards;
+    /* Fx 5+ */
+    -o-animation: flyInLeft 5s forwards;
+    /* Opera 12+ */
+    animation: flyInLeft 5s forwards;
+    /* IE 10+, Fx 29+ */
+}
+
+.factRight {
+    -webkit-animation: flyInRight 5s forwards;
+    /* Safari 4+ */
+    -moz-animation: flyInRight 5s forwards;
+    /* Fx 5+ */
+    -o-animation: flyInRight 5s forwards;
+    /* Opera 12+ */
+    animation: flyInRight 5s forwards;
+    /* IE 10+, Fx 29+ */
+}
+
+.nav-link:hover {
+    color: green !important;
+
 }
 
 .productsHeader {
@@ -200,6 +342,42 @@ body {
     margin-bottom: 10%;
 
 }
+
+#btnDiv {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#getQuoteButton {
+    margin: 2%;
+    box-shadow: 0px 10px 14px -7px #3e7327;
+    background: linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+    background-color: #77b55a;
+    border-radius: 4px;
+    border: 1px solid #4b8f29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #5b8a3c;
+}
+
+#getQuoteButton:hover {
+    background: linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+    background-color: #72b352;
+}
+
+#getQuoteButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
 
 .iconHolder {
     border-radius: 50%;
@@ -258,14 +436,51 @@ body {
     text-align: center;
     margin: auto;
 }
+
 /* products page  */
-#ppCon1{
+#ppCon1 {
     margin-top: 5%;
     background-color: black;
     height: 100vh;
     width: 100vw;
 
 }
-#cardHolder{
+
+#cardHolder {
     margin-left: 5%;
 }
+
+/* calculator page begin */
+
+#calculatorBody {
+    /* height: 100vh; */
+    width: 100vw;
+    background-image: url('./images/darkhand.jpeg');
+    background-size: 100vh;
+    overflow: auto;
+    padding-bottom: 25%;
+}
+
+#calculator {
+    /* position: relative; */
+    margin-top: 10%;
+    background-color: white;
+    padding-bottom: 3%;
+}
+
+.calcHeader, .calcHeadText {
+    text-align: center;
+}
+.calcHeadDis{
+    color: grey;
+    font-size: 10px;
+    text-align: center;
+}
+#resultsDiv{
+    margin-top: 3%;
+    border: black solid 1px;
+    margin-bottom: 3%;
+}
+
+
+/* calculator page end */

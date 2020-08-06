@@ -37,11 +37,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav id='theNav' class="navbar navbar-expand-lg navbar-custom bg-light sticky-top">
         <a class="navbar-brand" href="#">RavensEye</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button id='burgerBtn' class="navbar-toggler rotate" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" onclick="spinnyThingy()">
+            <i id='navBurger' class="fas fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -166,6 +167,10 @@
             of your
             visually impaired customers.
         </p>
+        <div id="btnDiv">
+            <button id="getQuoteButton">Education & Resources</button>
+            <button id="getQuoteButton">Request a Quote</button>
+        </div>
     </div>
     <div class="container" id="products">
         <h3 class="productsHeader">
@@ -299,7 +304,7 @@
         </h3>
         <div class="row">
             <div class="col">
-                <div id="headCon1" class="container mbTextCon">
+                <div id="headCon1" class="container mbTextCon factRight">
                     RavensEye was created with one mission in mind, to reduce the net amount of suffering in the world.
                     Quickly
                     growing from an Austin based startup
@@ -307,7 +312,7 @@
                 </div>
             </div>
             <div class="col">
-                <div id="headCon2" class="container mbTextCon">
+                <div id="headCon2" class="container mbTextCon factLeft">
                     RavensEye enables school systems, corporations, and small businesses to become an ally of the sight
                     disabled
                     as
@@ -321,7 +326,7 @@
         </div> -->
         <div class="row">
             <div class='col'>
-                <div id="headCon3" class="container mbTextCon">
+                <div id="headCon3" class="container mbTextCon factRight">
                     RavensEye is crucial to not only preventing litigation but to taking pride in the fact that your
                     entity is doing the right thing by not just settling for compliance but creating a true user
                     experince for your sight
@@ -329,7 +334,7 @@
                 </div>
             </div>
             <div class='col'>
-                <div id="headCon4" class="container mbTextCon">
+                <div id="headCon4" class="container mbTextCon factLeft">
                     RavensEye employs sight disabled test engineers to perfect the end product before it is submitted
                     for review back to you.
                     This decreases revisions and increases time efficiency on your end.

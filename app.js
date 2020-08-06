@@ -34,3 +34,16 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
   
+  const spinnyThingy = () => {
+      console.log('tester')
+     let menu = document.getElementById('burgerBtn');
+     menu.classList.toggle('down')
+  }
+
+  const calculate = () => {
+    event.preventDefault()
+    let updateFrequency = document.getElementById('updateFreq').value
+    let pageCount = document.getElementById('pageCount').value
+    let websiteUse = document.getElementById('websiteUse').value
+      console.log('shit',websiteUse)
+  }

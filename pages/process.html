@@ -22,7 +22,7 @@
     <script src="https://kit.fontawesome.com/f133c5654c.js" crossorigin="anonymous"></script>
     <!-- end font awesome -->
     <!-- local css -->
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <title>Simianer ADA Solutions</title>
     <meta name="title" content="Simianer ADA Solutions">
     <meta name="description"
@@ -37,41 +37,42 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav id='theNav' class="navbar navbar-expand-lg navbar-custom bg-light sticky-top">
         <a class="navbar-brand" href="#">RavensEye</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button id='burgerBtn' class="navbar-toggler rotate" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" onclick="spinnyThingy()">
+            <i id='navBurger' class="fas fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li id='navItem' class="nav-item">
-                    <a class="nav-link" href="./index.html">
+                    <a class="nav-link" href="../index.html">
                         <i id='navIcon' class="fas fa-home"></i>
                         Home
                     </a>
                 </li>
                 <li id='navItem' class="nav-item">
-                    <a class="nav-link" href="./pages/products.html">
+                    <a class="nav-link" href="./products.html">
                         <i id='navIcon' class="fas fa-code"></i>
                         Products
                     </a>
                 </li>
                 <li id='navItem' class="nav-item">
-                    <a class="nav-link" href="./pages/process.html">
+                    <a class="nav-link" href="./process.html">
                         <i id='navIcon' class="fas fa-user-tie"></i>
                         The process
                     </a>
                 </li>
                 <li id='navItem' class="nav-item">
-                    <a class="nav-link" href="./pages/calculator.html">
+                    <a class="nav-link" href="./calculator.html">
                         <i id='navIcon' class="fas fa-calculator"></i>
                         Cost Calculator
                     </a>
                 </li>
                 <li id='navItem' class="nav-item">
-                    <a class="nav-link" href="./pages/aboutUs.html">
+                    <a class="nav-link" href="./aboutUs.html">
                         <i id='navIcon' class="fas fa-users "></i>
                         Who we are
                     </a>
@@ -89,6 +90,38 @@
     <!-- end navbar -->
     process
 
+
+    <!-- footer -->
+    <div id="footer" class="container-fluid position-absolute">
+        <div class="row">
+            <div class="col-sm">
+                Contact us for a quote Today
+            </div>
+            <br><br>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <i class="far fa-envelope"></i>
+                luke@simianeradasolutions.com
+            </div>
+            <br><br>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <i class="fas fa-phone-alt"></i>
+                402-350-2259
+            </div>
+            <br><br>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <a href="https://simianersolutions.com/" target='_blank'>
+                    <img id="SSLogo" src="./images/WhiteLogo.png">
+                </a>
+            </div>
+            <br><br>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 
